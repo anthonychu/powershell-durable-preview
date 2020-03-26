@@ -37,12 +37,13 @@ Choose one of the following options and follow the instructions to create a deve
 1. If prompted, sign in.
 1. A Create Environment dialog appears. Confirm the information and click *Create*. Wait a few minutes to create the environment.
 1. Click *Connect* to open the VS Online in-browser code editor.
+    ![VS Online](media/vsonline.png)
 
 ### Open the samples workspace
 
 Each sample is in its own folder. All of the sample folders can be opened together in a workspace.
 
-1. Using the Command Palette (press `F1` or `Ctrl-Shift-P` or `Cmd-Shift-P` (macOS)), search for and run the *Remote-Containers: Open Workspace in Container...* command. Select `samples.code-workspace` and VS Code will reopen in the workspace.
+1. Using the Command Palette (press `F1` or `Ctrl-Shift-P` or `Cmd-Shift-P` (macOS)), search for and run the *Remote-Containers: Open Workspace in Container...* (or *Workspaces: Open Workspace...* in VS Online) command. Select `samples.code-workspace` and VS Code will reopen in the workspace.
     ![Open workspace](media/open-workspace.png)
 
 ### Explore a PowerShell Durable Functions app
