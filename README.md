@@ -28,7 +28,8 @@ Choose one of the following options and follow the instructions to create a deve
 1. Open the repo's folder in VS Code.
 1. Using the Command Palette (press `F1` or `Ctrl-Shift-P` or `Cmd-Shift-P` (macOS)), search for and run the *Reopen in Container* command. VS Code will reopen, start the development environment in Docker, and connect to it.
     ![Reopen in container](media/reopen-in-container.png)
-    
+    You should see the VS Code is connected to the container in the bottom left corner.
+    ![Opened in container](media/opened-in-container.png)
 
 #### Option 2 - Visual Studio Online
 
