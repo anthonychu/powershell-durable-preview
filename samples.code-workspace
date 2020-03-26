@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "FunctionChaining"
+		},
+		{
+			"path": "FanOutFanIn"
+		},
+		{
+			"name": "powershell-durable-preview-devcontainer",
+			"path": "."
+		}
+	],
+	"settings": {
+		"debug.internalConsoleOptions": "neverOpen"
+	}
+}
