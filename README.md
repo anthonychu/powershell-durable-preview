@@ -72,7 +72,7 @@ It's time to run your first PowerShell Durable Functions app.
 1. When the function app has started, a URL for the HTTP triggered function is printed in the terminal (you may have to scroll up to find it).
     ![Copy URL](media/copy-function-url.png)
     > In VS Online in the browser, the URL may not work. Click on the *Remote Explorer* icon in the VS Code activity bar. Under *Environment Details*, port *7071* should already be listed as forwarded. Right-click on it and select *Copy Port URL*.
-    > ![Copy URL](.devcontainer/media/copy-url.png)
+    > ![Copy URL](media/copy-url.png)
     > Use this as the base URL instead of `http://localhost:7071`
 1. Copy the URL and open it in a browser. This sends a request to the `FunctionChainingStart` function that starts a `FunctionChainingOrchestrator` instance and returns an HTTP response.
     ![Check status response](media/check-status-response.png)
