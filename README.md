@@ -70,11 +70,14 @@ It's time to run your first PowerShell Durable Functions app.
     ![Select and start debugging](media/select-storage.png)
 1. Wait for the function app to start. Because it's your first time running it, it may take longer to acquire the necessary extensions and dependencies.
 1. When the function app has started, a URL for the HTTP triggered function is printed in the terminal (you may have to scroll up to find it).
-    ![Copy URL](media/copy-url.png)
+    ![Copy URL](media/copy-function-url.png)
+    > In VS Online in the browser, the URL may not work. Click on the *Remote Explorer* icon in the VS Code activity bar. Under *Environment Details*, port *7071* should already be listed as forwarded. Right-click on it and select *Copy Port URL*.
+    > ![Copy URL](.devcontainer/media/copy-url.png)
+    > Use this as the base URL instead of `http://localhost:7071`
 1. Copy the URL and open it in a browser. This sends a request to the `FunctionChainingStart` function that starts a `FunctionChainingOrchestrator` instance and returns an HTTP response.
     ![Check status response](media/check-status-response.png)
 1. The HTTP response return a set of URLs for managing the orchestrator instance you just started. Locate the `statusQueryGetUri` value and open it in a browser window to view the orchestrator instance's status.
-    > In VS Online, localhost URLs may be returned. Replace `http://localhost` with the VS Online port URL.
+    > In VS Online, localhost URLs may be returned. Replace `http://localhost:7071` with the VS Online port URL.
 
     ![Orchestrator instance status](media/instance-status.png)
 
