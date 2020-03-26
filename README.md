@@ -42,13 +42,16 @@ Choose one of the following options and follow the instructions to create a deve
 
 Each sample is in its own folder. All of the sample folders can be opened together in a workspace.
 
-1. Using the Command Palette (press `F1` or `Ctrl-Shift-P` or `Cmd-Shift-P` (macOS)), search for and run the *Remote-Containers: Open Workspace in Container...* command. VS Code will reopen in the workspace.
+1. Using the Command Palette (press `F1` or `Ctrl-Shift-P` or `Cmd-Shift-P` (macOS)), search for and run the *Remote-Containers: Open Workspace in Container...* command. Select `samples.code-workspace` and VS Code will reopen in the workspace.
+    ![Open workspace](media/open-workspace.png)
 
 ### Explore a PowerShell Durable Functions app
 
 Now that you have the workspace open, take a look at `FunctionChaining` sample app to see what's inside.
 
 In the Explorer pane where the workspace is opened, expand the `FunctionChaining` folder.
+
+![Browse files](media/browse-files.png)
 
 In the folder, you'll find files for configuring the function app. There are three functions, each in its own folder:
 * `FunctionChainingOrchestrator` - the main function that orchestrates activity functions
@@ -61,12 +64,18 @@ It's time to run your first PowerShell Durable Functions app.
 
 1. Using the Command Palette again, search for and run the *Debug: Select and Start Debugging...* command. A list of function apps appear.
 1. Select the `FunctionChaining` app.
+    ![Select and start debugging](media/start-debug.png)
 1. Because no storage account was configured in `local.settings.json`, the Azure Functions VS Code extension should prompt you to select a storage account. Sign in to Azure and create a new storage account. You may also select an existing storage account that you have *not* used with Durable Functions.
+    ![Select and start debugging](media/select-storage.png)
 1. Wait for the function app to start. Because it's your first time running it, it may take longer to acquire the necessary extensions and dependencies.
 1. When the function app has started, a URL for the HTTP triggered function is printed in the terminal (you may have to scroll up to find it).
+    ![Copy URL](media/copy-url.png)
 1. Copy the URL and open it in a browser. This sends a request to the `FunctionChainingStart` function that starts a `FunctionChainingOrchestrator` instance and returns an HTTP response.
+    ![Check status response](media/check-status-response.png)
 1. The HTTP response return a set of URLs for managing the orchestrator instance you just started. Locate the `statusQueryGetUri` value and open it in a browser window to view the orchestrator instance's status.
     > In VS Online, localhost URLs may be returned. Replace `http://localhost` with the VS Online port URL.
+
+    ![Orchestrator instance status](media/instance-status.png)
 
 Congratulations! You have just run your first PowerShell Durable Functions app!
 
